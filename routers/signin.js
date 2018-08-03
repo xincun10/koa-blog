@@ -1,5 +1,5 @@
 const router = require('koa-router')();
-//引用controller层的方法
+//引用controller
 const controller = require('../controller/c-signin');
 
 router.get('/signin', controller.postSignin);

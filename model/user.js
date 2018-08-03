@@ -23,7 +23,7 @@ createTable(users);
 //注册用户
 exports.insertData = (value) => {
     let _sql = 'insert into users set name=?,pass=?,avator=?,moment=?;';
-    query(_sql, value);
+    return query(_sql, value);
 }
 // 删除用户
 exports.deleteUserData = ( name ) => {
